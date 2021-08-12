@@ -1,0 +1,79 @@
+﻿<Window x:Name="window" x:Class="Performance_Tools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Performance_Tools"
+        xmlns:us="clr-namespace:Performance_Tools.Usercontrol"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="658" Width="810" ResizeMode="CanResize" WindowState="Normal" AllowsTransparency="True" WindowStyle="None" Background="Transparent" FontFamily="Roboto" Icon="/icon.ico">
+    <Window.Resources>
+        
+    </Window.Resources>
+
+    <Border x:Name="MainBorder" Background="White" CornerRadius="5" Margin="10" BorderThickness="0.5" BorderBrush="Gray" d:IsLocked="True" >
+
+        <Grid d:IsLocked="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="38"/>
+                <RowDefinition Height="550"/>
+                <RowDefinition Height="32"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" d:IsLocked="True">
+                <Border x:Name="topbar" Grid.Row="0" CornerRadius="5,5,0,0" Background ="White" MouseMove="Border_MouseMove" d:IsLocked="True">
+                    <Grid d:IsLocked="True">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="105"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="72"/>
+                            <ColumnDefinition Width="5"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="1" Content="Performance Tool" FontFamily="Roboto" VerticalAlignment="Center" d:IsLocked="True"/>
+                        <StackPanel Grid.Column="3" Orientation="Horizontal" d:IsLocked="True"  >
+                            <Button x:Name="maxbtn" Style="{DynamicResource maxbtn}" Margin="5,0,0,0" Click="maxbtn_Click" d:IsLocked="True"/>
+                            <Button x:Name="minbtn" Style="{DynamicResource minbtn}" Margin="5,0,0,0" Click="minbtn_Click" d:IsLocked="True"/>
+                            <Button x:Name="closebtn" Style="{DynamicResource closebtn}" Margin="5,0,0,0" Click="closebtn_Click" d:IsLocked="True"/>
+                        </StackPanel>
+
+                    </Grid>
+                    <Border.Effect>
+                        <DropShadowEffect Color="Gray" ShadowDepth="0.5">
+
+                        </DropShadowEffect>
+                    </Border.Effect>
+                </Border>
+            </Grid>
+
+
+            <Grid x:Name="MainBody"  Grid.Row="1" d:IsLocked="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="15,15,15,0" d:IsLocked="True">
+                    <Border Grid.Row="0" x:Name="FirstSection" CornerRadius="5"  Background="White" SnapsToDevicePixels="True" d:IsLocked="True">
+                        <Border.Effect>
+                            <DropShadowEffect Color="#FFD0D0D0" ShadowDepth="1" BlurRadius="15" Opacity="1" RenderingBias="Quality" Direction="330" />
+                        </Border.Effect>
+
+                    </Border>
+                    <Grid d:IsLocked="True">
+                        <us:CPU d:IsLocked="True"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1"  Margin="0,20,0,0" d:IsLocked="True">
+                    <us:Profiles d:IsLocked="True"/>
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+    </Border>
+
+</Window>

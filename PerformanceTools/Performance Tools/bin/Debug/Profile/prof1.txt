@@ -1,0 +1,6 @@
+Devs Profile
+--stapm-limit=25000 --fast-limit=30000 --slow-limit=20000 --tctl-temp=79
+STAPM LIMIT :25
+FAST LIMIT :30
+SLOW LIMIT :20
+TEMP LIMIT :79

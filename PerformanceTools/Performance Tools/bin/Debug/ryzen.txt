@@ -1,0 +1,11 @@
+ryzenadj --stapm-limit=25000 --fast-limit=30000 --slow-limit=25000 --tctl-temp=75  //default mode
+ryzenadj --stapm-limit=23000 --fast-limit=23000 --slow-limit=23000 --tctl-temp=75  //undervolt default
+ryzenadj --stapm-limit=25000 --fast-limit=30000 --slow-limit=25000 --tctl-temp=85  // gamming mode
+ryzenadj --stapm-limit=28000 --fast-limit=28000 --slow-limit=28000 --tctl-temp=90  // extreme gamming mode(high performance games)
+ryzenadj --stapm-limit=30000 --fast-limit=30000 --slow-limit=30000 --tctl-temp=90  // extreme work load mode (continous mode for few 30 seconds)
+ryzenadj --stapm-limit=35000 --fast-limit=35000 --slow-limit=35000 --tctl-temp=90  // ultimate mode(striclty non continous only) 
+ryzenadj --stapm-limit=45000 --fast-limit=45000 --slow-limit=45000 --tctl-temp=90  // bring it on(not recommended at all)
+ryzenadj --stapm-limit=15000 --fast-limit=20000 --slow-limit=15000 --tctl-temp=90  // powersave mode
+
+
+

@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="Performance_Tools.Usercontrol.Profiles"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Performance_Tools.Usercontrol"
+             mc:Ignorable="d" 
+             d:DesignHeight="231" d:DesignWidth="800" FontFamily="Roboto">
+    <Grid Background="White">
+        <StackPanel Orientation="Vertical">
+            <Label Content="Profiles" HorizontalAlignment="Center" FontSize="36" Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="perfbtn" Style="{DynamicResource Highperf}" Click="perfbtn_Click">
+                        <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource perfproftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label Content="Performance"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical" Margin="50,0,50,0">
+                    <Button x:Name="normfbtn" Style="{DynamicResource norm}" Click="normfbtn_Click">
+                        <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource normproftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label Content="Normal"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="savfbtn" Style="{DynamicResource save}" Click="savfbtn_Click">
+                        <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource saveproftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label Content="Powersave"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="prof1" Style="{DynamicResource add}" Click="profclick" ToolTipOpening="toolTipOpening">
+                        <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource proftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label x:Name="prof1txt" Content="" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="50,0,50,0">
+                    <Button x:Name="prof2" Style="{DynamicResource add}" Click="profclick" ToolTipOpening="toolTipOpening">
+                        <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource proftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label x:Name="prof2txt" Content="" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="prof3" Style="{DynamicResource add}" Click="profclick" ToolTipOpening="toolTipOpening">
+                        <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource proftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label x:Name="prof3txt" Content="" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="50,0,50,0">
+                    <Button x:Name="prof4" Style="{DynamicResource add}" Click="profclick" ToolTipOpening="toolTipOpening">
+                         <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource proftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label x:Name="prof4txt" Content="" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="prof5" Style="{DynamicResource add}" Click="profclick" ToolTipOpening="toolTipOpening">
+                        <Button.ToolTip>
+                            <ToolTip Style="{DynamicResource proftip}"/>
+                        </Button.ToolTip>
+                    </Button>
+                    <Label x:Name="prof5txt" Content="" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+            
+    </Grid>
+</UserControl>

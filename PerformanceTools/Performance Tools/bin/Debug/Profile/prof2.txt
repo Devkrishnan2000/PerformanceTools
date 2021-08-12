@@ -1,0 +1,6 @@
+gta4
+--stapm-limit=20000 --fast-limit=30000 --slow-limit=20000 --tctl-temp=95
+STAPM LIMIT :20
+FAST LIMIT :30
+SLOW LIMIT :20
+TEMP LIMIT :95

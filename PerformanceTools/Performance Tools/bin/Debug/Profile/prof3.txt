@@ -1,0 +1,6 @@
+Android Studio
+--stapm-limit=25000 --fast-limit=30000 --slow-limit=25000 --tctl-temp=85
+STAPM LIMIT :25
+FAST LIMIT :30
+SLOW LIMIT :25
+TEMP LIMIT :85
